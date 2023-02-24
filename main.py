@@ -2,7 +2,7 @@ from enum import Enum
 
 from fastapi import FastAPI, File, UploadFile
 import requests
-import pyserial
+import serial
 
 app = FastAPI()
 
