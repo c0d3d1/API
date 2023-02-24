@@ -20,7 +20,7 @@ def Upload_File():
    #header={'X-Api-Key': 'FD550BD4DA2442BA906AD1850539D6DB' }
    #response = requests.post(url, files=fle,data=payload,headers=header)
    ser = serial.Serial('/dev/ttyACM0', 115200) # I've verified that this is the proper COM port, second argument is baud rate, which I actually wasn't all that sure of, but I tried both 115200 and 9600 since they are both pretty common. I didn't bother tuning any other COM port settings.
-   ser.write(b'G28 X\n') # My second issue comes up when I'm not sure of the line ending character that the M2 expects (maybe \n, \r or even \r\n)
+   ser.write(fle.read()) # My second issue comes up when I'm not sure of the line ending character that the M2 expects (maybe \n, \r or even \r\n)
    ser.close()
 
 if __name__=='__main__':
