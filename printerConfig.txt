@@ -1,0 +1,10 @@
+Printer1,1,/dev/ttyACM0
+Testprinter,2,/dev/ttyACM1
+Prusa,2,/dev/ttyACM2
+NewOne,0,/dev/ttyACM3
+BambooLab,0,/dev/ttyACM4
+Newest,0,/dev/ttyACM5
+Even Newer,1,/dev/ttyACM6
+Printer8,1,/dev/ttyACM7
+Printer9,0,/dev/ttyACM8
+Printer10,0,/dev/ttyACM9
